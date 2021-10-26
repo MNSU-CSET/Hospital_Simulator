@@ -53,19 +53,18 @@ public class UIScript : MonoBehaviour
         //puts all devices into a list so we can call them later.
         List<InputDevice> devices = new List<InputDevice>();
 
-        //gets only the right controller.
-        InputDeviceCharacteristics rightControllerCharacteristics = InputDeviceCharacteristics.Right | InputDeviceCharacteristics.Controller;
+        //gets only the left controller.
+        InputDeviceCharacteristics leftControllerCharacteristics = InputDeviceCharacteristics.Left | InputDeviceCharacteristics.Controller;
         
-        InputDevices.GetDevicesWithCharacteristics(rightControllerCharacteristics, devices);
+        InputDevices.GetDevicesWithCharacteristics(leftControllerCharacteristics, devices);
 
+        //ensures that if there are multiple devices no error occurs.
         if (devices.Count > 0)
         {
             targetDevice = devices[0];
         }
 
-        //if the a button is pressed turn off/or on the menu screen depending on if it is on or off
-
-
+        //gets the value of the primary button.
         if (targetDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool aprimaryButtonValue) && aprimaryButtonValue) 
         {
             Debug.Log("Off or on UI");
