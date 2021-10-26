@@ -67,7 +67,7 @@ public class UIScript : MonoBehaviour
         //gets the value of the primary button.
         if (targetDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool aprimaryButtonValue) && aprimaryButtonValue) 
         {
-            Debug.Log("Off or on UI");
+            //Debug.Log("Off or on UI");
 
             //ADD INVOKE METHOD INSTEAD
             SceneSelectorUIOn();
