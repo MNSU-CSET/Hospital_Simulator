@@ -124,6 +124,36 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &23625805
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 23625806}
+  m_Layer: 0
+  m_Name: Attach Transform
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &23625806
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23625805}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.0094, y: 0.6379, z: -0.2916}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3365562854566292528}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &76751048
 GameObject:
   m_ObjectHideFlags: 0
@@ -1862,7 +1892,7 @@ Transform:
   - {fileID: 552666593}
   - {fileID: 1719118209}
   m_Father: {fileID: 3365562854566292528}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1677262605
 GameObject:
@@ -3588,6 +3618,7 @@ GameObject:
   - component: {fileID: 1796857418273693222}
   - component: {fileID: 1796857418273693221}
   - component: {fileID: 1796857418273693220}
+  - component: {fileID: 1796857418273693223}
   m_Layer: 0
   m_Name: Cart Hospital 01
   m_TagString: Untagged
@@ -3664,7 +3695,7 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  m_AttachTransform: {fileID: 0}
+  m_AttachTransform: {fileID: 23625806}
   m_AttachEaseInTime: 0.15
   m_MovementType: 2
   m_VelocityDamping: 1
@@ -3730,6 +3761,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.014230888, y: 0.2808784, z: 0.011873245}
   m_Center: {x: 0.15373047, y: 0.29043722, z: 0.23196125}
+--- !u!1818360608 &1796857418273693223
+PositionConstraint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1796857418273693219}
+  m_Enabled: 1
+  m_Weight: 1
+  m_TranslationAtRest: {x: 1.01, y: 0, z: 1.79}
+  m_TranslationOffset: {x: 2.1287482, y: 0, z: 1.1587467}
+  m_AffectTranslationX: 0
+  m_AffectTranslationY: 1
+  m_AffectTranslationZ: 0
+  m_IsContraintActive: 1
+  m_IsLocked: 1
+  m_Sources: []
 --- !u!1 &1796857418548304551
 GameObject:
   m_ObjectHideFlags: 0
@@ -4246,6 +4294,7 @@ Transform:
   m_LocalPosition: {x: 1.01, y: 0, z: 1.79}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 23625806}
   - {fileID: 1639611310}
   m_Father: {fileID: 7768240258299123647}
   m_RootOrder: 11
