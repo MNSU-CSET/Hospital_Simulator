@@ -4,11 +4,7 @@ using UnityEngine;
 
 public class handprecense : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    //Hi
 
     // Update is called once per frame
     void Update()
