@@ -3770,16 +3770,14 @@ PositionConstraint:
   m_GameObject: {fileID: 1796857418273693219}
   m_Enabled: 1
   m_Weight: 1
-  m_TranslationAtRest: {x: 1.01, y: -0.0013000071, z: 1.79}
-  m_TranslationOffset: {x: 0.9162499, y: 0.37995002, z: 1.7400002}
+  m_TranslationAtRest: {x: 1.01, y: 0, z: 1.79}
+  m_TranslationOffset: {x: 2.1287482, y: 0, z: 1.1587467}
   m_AffectTranslationX: 0
   m_AffectTranslationY: 1
   m_AffectTranslationZ: 0
   m_IsContraintActive: 1
   m_IsLocked: 1
-  m_Sources:
-  - sourceTransform: {fileID: 1201993301}
-    weight: 1
+  m_Sources: []
 --- !u!1 &1796857418548304551
 GameObject:
   m_ObjectHideFlags: 0
@@ -4293,7 +4291,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1796857418273693219}
   m_LocalRotation: {x: -0, y: -0.70710474, z: -0, w: 0.70710886}
-  m_LocalPosition: {x: 1.01, y: -0.0013000071, z: 1.79}
+  m_LocalPosition: {x: 1.01, y: 0, z: 1.79}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 23625806}
