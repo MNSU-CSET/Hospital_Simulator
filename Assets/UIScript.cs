@@ -28,20 +28,13 @@ public class UIScript : MonoBehaviour
 
     void Start()
     {
-        //adding a list of Inputs
-        //depending on what device is being used
-        List<InputDevice> devices = new List<InputDevice>();
-        //makes input come from the right controller
-        InputDeviceCharacteristics rightControllerCharacteristics = InputDeviceCharacteristics.HeldInHand | InputDeviceCharacteristics.Right | InputDeviceCharacteristics.Controller;
-        InputDevices.GetDevicesWithCharacteristics(rightControllerCharacteristics, devices);
+        
+        
 
-        if (devices.Count > 0)
-        {
-            targetDevice = devices[0];
-        }
+        
 
         //set our sceneselctor to not show
-        SceneSelector.enabled = false;
+        SceneSelector.enabled = true;
 
 
     }
@@ -63,18 +56,27 @@ public class UIScript : MonoBehaviour
         if (targetDevice.TryGetFeatureValue(CommonUsages.primary2DAxis, out Vector2 primary2DAxisValue) && primary2DAxisValue != Vector2.zero)
             Debug.Log("Primary TouchPad" + primary2DAxisValue);
 
-        
+        */
+
+        List<InputDevice> devices = new List<InputDevice>();
+        InputDeviceCharacteristics rightControllerCharacteristics = InputDeviceCharacteristics.Right | InputDeviceCharacteristics.Controller;
+        InputDevices.GetDevicesWithCharacteristics(rightControllerCharacteristics, devices);
+
+        if (devices.Count > 0)
+        {
+            targetDevice = devices[0];
+        }
 
         //if the a button is pressed turn off/or on the menu screen depending on if it is on or off
-        if ()
+
 
         if (targetDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool aprimaryButtonValue) && aprimaryButtonValue) 
         {
             Debug.Log("Off or on UI");
             if (SceneSelector.enabled == true) { SceneSelector.enabled = false; }
-            else if (SceneSelector.enabled == true) { SceneSelector.enabled = true; }
+            else if (SceneSelector.enabled == false) { SceneSelector.enabled = true; }
         }
-        */
+        
         bool triggerValue;
         if (targetDevice.TryGetFeatureValue(CommonUsages.primaryButton, out triggerValue) && triggerValue)
         {
