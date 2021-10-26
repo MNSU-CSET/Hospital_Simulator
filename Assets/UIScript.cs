@@ -11,6 +11,7 @@ public class UIScript : MonoBehaviour
 
 
     //GUI components
+    
     public Canvas SceneSelector;
     public TextMeshProUGUI Scenes;
 
@@ -27,16 +28,8 @@ public class UIScript : MonoBehaviour
 
 
     void Start()
-    {
+    { 
         
-        
-
-        
-
-        //set our sceneselctor to not show
-        SceneSelector.enabled = true;
-
-
     }
 
     // Update is called once per frame
@@ -57,9 +50,12 @@ public class UIScript : MonoBehaviour
             Debug.Log("Primary TouchPad" + primary2DAxisValue);
 
         */
-
+        //puts all devices into a list so we can call them later.
         List<InputDevice> devices = new List<InputDevice>();
+
+        //gets only the right controller.
         InputDeviceCharacteristics rightControllerCharacteristics = InputDeviceCharacteristics.Right | InputDeviceCharacteristics.Controller;
+        
         InputDevices.GetDevicesWithCharacteristics(rightControllerCharacteristics, devices);
 
         if (devices.Count > 0)
@@ -73,15 +69,23 @@ public class UIScript : MonoBehaviour
         if (targetDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool aprimaryButtonValue) && aprimaryButtonValue) 
         {
             Debug.Log("Off or on UI");
-            if (SceneSelector.enabled == true) { SceneSelector.enabled = false; }
-            else if (SceneSelector.enabled == false) { SceneSelector.enabled = true; }
+
+            //ADD INVOKE METHOD INSTEAD
+            SceneSelectorUIOn();
         }
+        else { SceneSelectorUIOff(); }
         
-        bool triggerValue;
-        if (targetDevice.TryGetFeatureValue(CommonUsages.primaryButton, out triggerValue) && triggerValue)
-        {
-            Debug.Log("A is pressed button is pressed.");
-        }
+       
+    }
+
+    void SceneSelectorUIOn()
+    {
+        SceneSelector.enabled = true;
+       
+    }
+    void SceneSelectorUIOff()
+    {
+        SceneSelector.enabled = false;
 
     }
 }
