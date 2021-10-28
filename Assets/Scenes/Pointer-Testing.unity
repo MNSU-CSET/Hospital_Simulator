@@ -6320,7 +6320,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Post-process Volume Hospital
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 931766889898005988, guid: ff55462781981914e9ce3e647f9ec8e8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ff55462781981914e9ce3e647f9ec8e8, type: 3}
 --- !u!1 &1613520025
 GameObject:
