@@ -1961,7 +1961,7 @@ GameObject:
   - component: {fileID: 740782088}
   - component: {fileID: 740782087}
   m_Layer: 0
-  m_Name: SceneSelctor
+  m_Name: SceneSelector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
