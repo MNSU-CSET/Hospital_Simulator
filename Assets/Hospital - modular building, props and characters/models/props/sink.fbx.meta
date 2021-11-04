@@ -1,0 +1,161 @@
+fileFormatVersion: 2
+guid: d2e96372ca93cda43b7fe09dad4f39f7
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: crane
+    100002: crane._2
+    100004: mirror
+    100006: mirror_2
+    100008: //RootNode
+    100010: sink
+    100012: sink_2
+    100014: tube
+    100016: tube_1
+    400000: crane
+    400002: crane._2
+    400004: mirror
+    400006: mirror_2
+    400008: sink
+    400010: //RootNode
+    400012: sink_2
+    400014: tube
+    400016: tube_1
+    2300000: crane
+    2300002: crane._2
+    2300004: mirror
+    2300006: mirror_2
+    2300008: sink
+    2300010: sink_2
+    2300012: tube
+    2300014: tube_1
+    3300000: crane
+    3300002: crane._2
+    3300004: mirror
+    3300006: mirror_2
+    3300008: sink
+    3300010: sink_2
+    3300012: tube
+    3300014: tube_1
+    4300000: crane._2
+    4300002: crane
+    4300004: sink_2
+    4300006: mirror_2
+    4300008: tube_1
+    4300010: tube
+    4300012: mirror
+    4300014: sink
+    6400000: crane
+    6400002: crane._2
+    6400004: mirror
+    6400006: mirror_2
+    6400008: sink
+    6400010: sink_2
+    6400012: tube
+    6400014: tube_1
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: chrome
+    second: {fileID: 2100000, guid: f961001cba9c83743a3cc8e666f6ec9c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: crane
+    second: {fileID: 2100000, guid: a1bc6cb020ed7f44b963003c7802f9db, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mirror
+    second: {fileID: 2100000, guid: 5bdff7c40f599df4db934114aa63018f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sink
+    second: {fileID: 2100000, guid: 1eb48fe0d30694843a1a10dddf21c67c, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
