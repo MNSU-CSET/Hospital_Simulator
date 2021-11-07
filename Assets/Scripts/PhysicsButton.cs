@@ -30,10 +30,11 @@ public class PhysicsButton : MonoBehaviour
         {
             Pressed();
         }
-        if (isPressed && GetValue() - threshold >= 1)
+        if (isPressed && GetValue() - threshold <= 0)
         {
             Released();
         }
+        
     }
 
     // Checks the posistion relalitve to the base. Resizing should work, but I have no idea
