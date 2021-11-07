@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UIToggle : MonoBehaviour
+public class ToggleableObject : MonoBehaviour
 {
     [SerializeField] bool defualtState = true;
     private bool currentMode = true;
@@ -19,7 +19,7 @@ public class UIToggle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void ToggleObject()
@@ -28,3 +28,4 @@ public class UIToggle : MonoBehaviour
         toBeToggled.SetActive(currentMode);
     }
 }
+
