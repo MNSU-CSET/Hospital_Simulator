@@ -4294,6 +4294,7 @@ GameObject:
   - component: {fileID: 762313053}
   - component: {fileID: 762313052}
   - component: {fileID: 762313051}
+  - component: {fileID: 762313056}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -4403,6 +4404,20 @@ RectTransform:
   m_AnchoredPosition: {x: 2.686, y: 1.18}
   m_SizeDelta: {x: 640, y: 480}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &762313056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762313050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f5575cc8c663d847b6e810e66c4e3f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentMode: 0
+  toBeToggled: {fileID: 762313050}
 --- !u!1 &767627025
 GameObject:
   m_ObjectHideFlags: 0
@@ -7858,7 +7873,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 1.7699957, z: 0}
+  m_ConnectedAnchor: {x: 0, y: 1.5833378, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
