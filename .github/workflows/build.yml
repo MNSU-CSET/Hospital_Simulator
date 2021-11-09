@@ -13,8 +13,8 @@ jobs:
       matrix:
         targetPlatform:
           - StandaloneWindows # Build a Windows standalone.
-          - StandaloneWindows64 # Build a Windows 64-bit standalone.
-          - WebGL # WebGL.
+          #- StandaloneWindows64 # Build a Windows 64-bit standalone.
+          #- WebGL # WebGL.
     steps:
       - uses: actions/checkout@v2
         with:
