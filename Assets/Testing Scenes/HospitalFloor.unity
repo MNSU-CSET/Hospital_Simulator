@@ -2512,7 +2512,6 @@ GameObject:
   - component: {fileID: 1751314617}
   - component: {fileID: 1751314616}
   - component: {fileID: 1751314615}
-  - component: {fileID: 1751314619}
   m_Layer: 0
   m_Name: XRRig
   m_TagString: Untagged
@@ -2586,21 +2585,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: -88.727, z: 0}
---- !u!114 &1751314619
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1751314614}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af6bf904e410ee8479f9093d8830d1f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_LocomotionProvider: {fileID: 1174723872}
-  m_MinHeight: 1
-  m_MaxHeight: 2
 --- !u!1 &1776705750
 GameObject:
   m_ObjectHideFlags: 0

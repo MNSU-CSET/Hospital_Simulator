@@ -871,7 +871,6 @@ GameObject:
   - component: {fileID: 436859144}
   - component: {fileID: 436859143}
   - component: {fileID: 436859142}
-  - component: {fileID: 436859140}
   m_Layer: 0
   m_Name: XRRig
   m_TagString: Untagged
@@ -879,21 +878,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &436859140
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 436859139}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af6bf904e410ee8479f9093d8830d1f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_LocomotionProvider: {fileID: 1246916791}
-  m_MinHeight: 1
-  m_MaxHeight: 2
 --- !u!114 &436859142
 MonoBehaviour:
   m_ObjectHideFlags: 0
