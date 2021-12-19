@@ -24,6 +24,7 @@ public class DebuggerUI : MonoBehaviour
             FpsText.text = frameRate.ToString() + " FPS";
 
             time -= pollingTime;
+            frameCount = 0;
         }
 
     }
