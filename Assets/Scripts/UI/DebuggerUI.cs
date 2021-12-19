@@ -9,6 +9,7 @@ public class DebuggerUI : MonoBehaviour
     // Update is called once per frame
     [SerializeField] private TextMeshProUGUI FpsText;
     [SerializeField] private TextMeshProUGUI PositionText;
+    [SerializeField] private TextMeshProUGUI RotationText;
     [SerializeField] private GameObject cameraObject;
 
 
@@ -30,6 +31,7 @@ public class DebuggerUI : MonoBehaviour
         {
             UpdateFPS();
             UpdatePosistion();
+            UpdateRotation();
 
             time -= pollingTime;
         }
@@ -42,8 +44,15 @@ public class DebuggerUI : MonoBehaviour
         float y = cameraObject.transform.position.y;
 
         PositionText.text = $"Position (X, Y, Z): {x}, {y}, {z}";
-        Debug.Log($"Position (X, Y, Z): {x}, {y}, {z}");
+    }
 
+    private void UpdateRotation()
+    {
+        float z = cameraObject.transform.rotation.z;
+        float x = cameraObject.transform.rotation.x;
+        float y = cameraObject.transform.rotation.y;
+
+        RotationText.text = $"Rotation (X, Y, Z): {x}, {y}, {z}";
     }
 
     // Tracks the time and frame count. Updates every pollingTime seconds to a Text Object
