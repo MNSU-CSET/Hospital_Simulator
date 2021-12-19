@@ -14,6 +14,7 @@ public class DebuggerUI : MonoBehaviour
 
     void Update()
     {
+        // Tracks the time and frame count. Updates every pollingTime seconds to a Text Object
         time += Time.deltaTime;
 
         frameCount++;
