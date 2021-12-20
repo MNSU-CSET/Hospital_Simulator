@@ -6538,6 +6538,7 @@ MonoBehaviour:
   PositionText: {fileID: 326766996}
   RotationText: {fileID: 790995169}
   cameraObject: {fileID: 767627025}
+  isTurnedOn: 1
 --- !u!114 &1231445113
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -12,16 +12,40 @@ public class DebuggerUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI RotationText;
     [SerializeField] private GameObject cameraObject;
 
+    [SerializeField] private bool isTurnedOn = false;
+
 
     private float pollingTime = 1f;
     private float time;
     private int frameCount;
 
+    private void Start()
+    {
+        if (!isTurnedOn)
+        {
+            SetToBlank();
+        }
+    }
+
     void Update()
     {
-        time += Time.deltaTime;
-        frameCount++;
-        PollingTimeActivation();
+        //// If person hits the key, switch to whatever the oppisite is.
+        //   Currently breaking the code
+        //if (Input.GetKeyDown(KeyCode.F3))
+        //{
+        //    isTurnedOn = !isTurnedOn;
+        //}
+
+        if (isTurnedOn)
+        {
+            time += Time.deltaTime;
+            frameCount++;
+            PollingTimeActivation();
+        }
+        else
+        {
+            SetToBlank();
+        }
     }
 
     // All methods that rely on pollingTime get called here.
@@ -63,5 +87,12 @@ public class DebuggerUI : MonoBehaviour
         FpsText.text = frameRate.ToString() + " FPS";
 
         frameCount = 0;
+    }
+
+    private void SetToBlank()
+    {
+        FpsText.text = "";
+        PositionText.text = "";
+        RotationText.text = "";
     }
 }
