@@ -1,5 +1,49 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5803172310640654107
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2636689445007644954}
+  - component: {fileID: 49982383972588308}
+  m_Layer: 0
+  m_Name: Dispense
+  m_TagString: Cleaning Object
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2636689445007644954
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5803172310640654107}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.0017, y: 0.3131, z: 0.1269}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7755969237473801627}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &49982383972588308
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5803172310640654107}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03, y: 0.09, z: 0.03}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7755969236864243616
 GameObject:
   m_ObjectHideFlags: 0
@@ -15,7 +59,7 @@ GameObject:
   - component: {fileID: 7755969236864243618}
   m_Layer: 0
   m_Name: Hand Sanitizer WHITE 1
-  m_TagString: Untagged
+  m_TagString: Cleaning Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -261,7 +305,7 @@ GameObject:
   - component: {fileID: 7755969237473801627}
   m_Layer: 0
   m_Name: Colliders
-  m_TagString: Untagged
+  m_TagString: Cleaning Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -281,6 +325,7 @@ Transform:
   - {fileID: 7755969238391432340}
   - {fileID: 7755969237744277590}
   - {fileID: 7755969237189687275}
+  - {fileID: 2636689445007644954}
   m_Father: {fileID: 7755969236864243619}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -296,7 +341,7 @@ GameObject:
   - component: {fileID: 7755969237722663535}
   m_Layer: 0
   m_Name: FlatBottom
-  m_TagString: Untagged
+  m_TagString: Cleaning Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
