@@ -30,7 +30,7 @@ public class ClipboardInformation : MonoBehaviour
         Name.text = PatientScript.PatientID;
         Age.text = "" + PatientScript.Age;
         DateofBirth.text = PatientScript.DateOfBirth;
-        PatientID.text = PatientScript.PatientID;
+        PatientID.text = "Patient ID" + PatientScript.PatientID;
         
 
     }
