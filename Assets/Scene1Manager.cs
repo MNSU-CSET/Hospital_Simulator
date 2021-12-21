@@ -9,6 +9,7 @@ public class Scene1Manager : MonoBehaviour
     [Header("Scripts")]
     
     public Patient PatientScript;
+    public Player PlayerScript;
     
     [Space]
 
@@ -100,6 +101,22 @@ public class Scene1Manager : MonoBehaviour
         else if (CheckPointTwo == false && TimeValue > StartCheckTwo) { StartCheckPointTwo(); Debug.Log("2"); }
         else if (CheckPointThree == false && TimeValue > StartCheckThree) { StartCheckPointThree(); Debug.Log("3"); }
         else if (CheckPointFour == false && TimeValue > StartCheckFour) { StartCheckPointFour(); Debug.Log("4"); }
+
+
+        //update checkpoints
+
+        //handswashed
+        if (PlayerScript.leftHand && PlayerScript.rightHand)
+        {
+            HandsWashed = true;
+        }
+        //introduce self
+
+        //check checkmarks to start next checkpoint
+        if (true)
+        {
+ 
+        }
 
     }
 
