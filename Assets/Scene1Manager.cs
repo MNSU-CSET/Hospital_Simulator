@@ -110,13 +110,10 @@ public class Scene1Manager : MonoBehaviour
         {
             HandsWashed = true;
         }
-        //introduce self
+       
 
-        //check checkmarks to start next checkpoint
-        if (true)
-        {
- 
-        }
+   
+
 
     }
 
@@ -131,8 +128,48 @@ public class Scene1Manager : MonoBehaviour
         //change the display text
        TimeDisplay.text = string.Format("{0:00}:{1:00}", min, sec);
     }
+    //check if a checkpoint has been completed
+    public void CheckPointOneComplete()
+    {
+        if
+            (
+               HandsWashed
+            && IntroducedSelf
+            && ConfirmedPatientID
+            && HeadToToeAssesmentBegan
+            ) { StartCheckPointTwo(); }
+    }
+    public void CheckPointTwoComplete()
+    {
+        if
+            (
+               HeadToToeAssementFinsihed
+            && AppliedOxygen
+            && AssessedIV
+            && AnsweredFamilyQuestions
+            ) { StartCheckPointThree(); }
+    }
+    public void CheckPointThreeComplete()
+    {
+        if
+            (
+               AssessedPain
+            && AssessedWound
+            && ObtainedWoundCulture
+            
+            ) { StartCheckPointFour(); }
+    }
+    public void CheckPointFourComplete()
+    {
+        if
+            (
+               AdminsteredCAM
+            && NotifiedPhysicianOfResults
+  
+            ){ /*This will conclude the game*/ Debug.Log("Scene Complete"); }
 
-    //checkpoints
+        }
+    //checkpoints to start
     void StartCheckPointOne()
     {
         CheckPointOne = true;

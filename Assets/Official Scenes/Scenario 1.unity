@@ -1584,6 +1584,195 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1698450261}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1843190914
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8220427543353597924}
+    m_Modifications:
+    - target: {fileID: 7241443547521087229, guid: 595d421bf91d1ab4baf608f7620939a9,
+        type: 3}
+      propertyPath: m_text
+      value: Introduce Self
+      objectReference: {fileID: 0}
+    - target: {fileID: 7241443547797460208, guid: 595d421bf91d1ab4baf608f7620939a9,
+        type: 3}
+      propertyPath: m_Name
+      value: Confirm ID
+      objectReference: {fileID: 0}
+    - target: {fileID: 7241443547797460214, guid: 595d421bf91d1ab4baf608f7620939a9,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1843190916}
+    - target: {fileID: 7241443547797460214, guid: 595d421bf91d1ab4baf608f7620939a9,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ConfirmPatientID
+      objectReference: {fileID: 0}
+    - target: {fileID: 7241443547797460214, guid: 595d421bf91d1ab4baf608f7620939a9,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UIDialougeOptions, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7241443548217145300, guid: 595d421bf91d1ab4baf608f7620939a9,
+        type: 3}
+      propertyPath: m_Name
+      value: Dialouge Options
+      objectReference: {fileID: 0}
+    - target: {fileID: 7241443548302184058, guid: 595d421bf91d1ab4baf608f7620939a9,
+        type: 3}
+      propertyPath: m_text
+      value: Speech Options
+      objectReference: {fileID: 0}
+    - target: {fileID: 7241443548302184058, guid: 595d421bf91d1ab4baf608f7620939a9,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7241443548302184058, guid: 595d421bf91d1ab4baf608f7620939a9,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7241443548302184059, guid: 595d421bf91d1ab4baf608f7620939a9,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 204.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 7241443548302184059, guid: 595d421bf91d1ab4baf608f7620939a9,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 50.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 7241443548302184059, guid: 595d421bf91d1ab4baf608f7620939a9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 7241443548302184059, guid: 595d421bf91d1ab4baf608f7620939a9,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 363.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 7241443548302184059, guid: 595d421bf91d1ab4baf608f7620939a9,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 160.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 7241443548847527417, guid: 595d421bf91d1ab4baf608f7620939a9,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7241443548847527417, guid: 595d421bf91d1ab4baf608f7620939a9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7241443548847527417, guid: 595d421bf91d1ab4baf608f7620939a9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.36144
+      objectReference: {fileID: 0}
+    - target: {fileID: 7241443548847527417, guid: 595d421bf91d1ab4baf608f7620939a9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7241443548847527417, guid: 595d421bf91d1ab4baf608f7620939a9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7241443548847527417, guid: 595d421bf91d1ab4baf608f7620939a9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7241443548847527417, guid: 595d421bf91d1ab4baf608f7620939a9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7241443548847527417, guid: 595d421bf91d1ab4baf608f7620939a9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7241443548847527417, guid: 595d421bf91d1ab4baf608f7620939a9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7241443548847527417, guid: 595d421bf91d1ab4baf608f7620939a9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7241443548847527417, guid: 595d421bf91d1ab4baf608f7620939a9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7241443548847527418, guid: 595d421bf91d1ab4baf608f7620939a9,
+        type: 3}
+      propertyPath: m_Name
+      value: UserInterface
+      objectReference: {fileID: 0}
+    - target: {fileID: 7241443548847527423, guid: 595d421bf91d1ab4baf608f7620939a9,
+        type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 8220427543353597925}
+    - target: {fileID: 7241443548880534777, guid: 595d421bf91d1ab4baf608f7620939a9,
+        type: 3}
+      propertyPath: m_text
+      value: Confirm ID
+      objectReference: {fileID: 0}
+    - target: {fileID: 7241443548941449089, guid: 595d421bf91d1ab4baf608f7620939a9,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1843190916}
+    - target: {fileID: 7241443548941449089, guid: 595d421bf91d1ab4baf608f7620939a9,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Introduction
+      objectReference: {fileID: 0}
+    - target: {fileID: 7241443548941449089, guid: 595d421bf91d1ab4baf608f7620939a9,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UIDialougeOptions, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7241443548941449091, guid: 595d421bf91d1ab4baf608f7620939a9,
+        type: 3}
+      propertyPath: m_Name
+      value: Introduction
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7241443548847527416, guid: 595d421bf91d1ab4baf608f7620939a9, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 595d421bf91d1ab4baf608f7620939a9, type: 3}
+--- !u!1 &1843190915 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7241443548847527418, guid: 595d421bf91d1ab4baf608f7620939a9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1843190914}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1843190916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843190915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0bc26e27759a374ca24daf91dae3aed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SceneScript: {fileID: 1875180504}
 --- !u!1 &1875180503
 GameObject:
   m_ObjectHideFlags: 0
@@ -2183,6 +2372,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b48157e9cb38e67458822b57e2be757c, type: 3}
+--- !u!4 &8220427543353597924 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 563612956940900927, guid: b48157e9cb38e67458822b57e2be757c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8220427543353597923}
+  m_PrefabAsset: {fileID: 0}
+--- !u!20 &8220427543353597925 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 6818151502952010155, guid: b48157e9cb38e67458822b57e2be757c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8220427543353597923}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &8220427543353597928 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2520795747385101950, guid: b48157e9cb38e67458822b57e2be757c,
