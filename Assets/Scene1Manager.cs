@@ -106,7 +106,7 @@ public class Scene1Manager : MonoBehaviour
         //update checkpoints
 
         //handswashed
-        if (PlayerScript.leftHand && PlayerScript.rightHand)
+        if (PlayerScript.LeftHand && PlayerScript.RightHand)
         {
             HandsWashed = true;
         }
