@@ -416,6 +416,31 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 514219597}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &541580420 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7241443548217145300, guid: 595d421bf91d1ab4baf608f7620939a9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1843190914}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &541580422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 541580420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7951c64acb0fa62458bf30a60089fe2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 0
+  m_CheckFor2DOcclusion: 0
+  m_CheckFor3DOcclusion: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RaycastTriggerInteraction: 1
 --- !u!1001 &613937921
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1731,6 +1756,26 @@ PrefabInstance:
       propertyPath: m_text
       value: Confirm ID
       objectReference: {fileID: 0}
+    - target: {fileID: 7241443548880534778, guid: 595d421bf91d1ab4baf608f7620939a9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7241443548880534778, guid: 595d421bf91d1ab4baf608f7620939a9,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.099998474
+      objectReference: {fileID: 0}
+    - target: {fileID: 7241443548913463625, guid: 595d421bf91d1ab4baf608f7620939a9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.113
+      objectReference: {fileID: 0}
+    - target: {fileID: 7241443548913463625, guid: 595d421bf91d1ab4baf608f7620939a9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.833
+      objectReference: {fileID: 0}
     - target: {fileID: 7241443548941449089, guid: 595d421bf91d1ab4baf608f7620939a9,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1745,6 +1790,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: UIDialougeOptions, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7241443548941449090, guid: 595d421bf91d1ab4baf608f7620939a9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7241443548941449090, guid: 595d421bf91d1ab4baf608f7620939a9,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2.1
       objectReference: {fileID: 0}
     - target: {fileID: 7241443548941449091, guid: 595d421bf91d1ab4baf608f7620939a9,
         type: 3}
@@ -1815,16 +1870,16 @@ MonoBehaviour:
   AppliedOxygen: 0
   AssessedIV: 0
   AnsweredFamilyQuestions: 0
-  StartCheckTwo: 0
+  StartCheckTwo: 10
   CheckPointThree: 0
   AssessedPain: 0
   AssessedWound: 0
   ObtainedWoundCulture: 0
-  StartCheckThree: 0
+  StartCheckThree: 20
   CheckPointFour: 0
   AdminsteredCAM: 0
   NotifiedPhysicianOfResults: 0
-  StartCheckFour: 0
+  StartCheckFour: 30
   TimeDisplay: {fileID: 1881080856}
   TimeValue: 0
 --- !u!4 &1875180505
