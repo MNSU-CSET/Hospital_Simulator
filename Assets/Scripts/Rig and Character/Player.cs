@@ -5,8 +5,8 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     private string name;
-    [SerializeField] private Hand leftHand;
-    [SerializeField] private Hand rightHand;
+    [SerializeField] public Hand leftHand;
+    [SerializeField] public Hand rightHand;
 
 
     // Start is called before the first frame update
@@ -20,4 +20,6 @@ public class Player : MonoBehaviour
     {
         
     }
+
+
 }
