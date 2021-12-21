@@ -27,4 +27,11 @@ public class Hand : MonoBehaviour
             isClean = true;
         }
     }
+
+    // Gets and Sets
+    public bool IsClean
+    {
+        get { return this.isClean; }
+        set { this.isClean = value; }
+    }
 }
