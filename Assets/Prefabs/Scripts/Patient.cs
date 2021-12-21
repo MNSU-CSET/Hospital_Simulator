@@ -10,15 +10,15 @@ public class Patient : MonoBehaviour
     //vitals
     [Header("Vital Information")]
     //temp in F
-    public float Temperature = 100;
-    public float Pulse = 86;
-    public float RespiratoryRate = 28;
+    public float Temperature = 500;
+    public float Pulse = 500;
+    public float RespiratoryRate = 500;
 
     //bloodpressure
-    public float SystolicBP = 120f;
-    public float DiastolicBP = 80f;
+    public float SystolicBP = 500f;
+    public float DiastolicBP = 500f;
 
-    public float OxygenSaturation = 92;
+    public float OxygenSaturation = 500;
     [Space]
     
     //information
@@ -30,7 +30,7 @@ public class Patient : MonoBehaviour
     
 
     //description of current behavior - this will be used when they are being assesed maybe?
-    public string PatientBehavior = "Patient is drowsy but easily aroused; has trouble keeping track of what is being said.";
+    public string PatientBehavior = "Can change escriptions here.";
 
     
 

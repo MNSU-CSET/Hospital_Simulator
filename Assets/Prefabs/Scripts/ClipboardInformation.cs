@@ -27,7 +27,7 @@ public class ClipboardInformation : MonoBehaviour
     {
 
         //this will update the text of all of the text meshes.
-        Name.text = PatientScript.PatientID;
+        Name.text = PatientScript.Name;
         Age.text = "" + PatientScript.Age;
         DateofBirth.text = PatientScript.DateOfBirth;
         PatientID.text = "Patient ID" + PatientScript.PatientID;
