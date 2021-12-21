@@ -1614,23 +1614,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PatientScript: {fileID: 636390093}
+  PlayerScript: {fileID: 8220427543353597928}
   CheckPointOne: 0
   HandsWashed: 0
   IntroducedSelf: 0
   ConfirmedPatientID: 0
   HeadToToeAssesmentBegan: 0
+  StartCheckOne: 0
   CheckPointTwo: 0
   HeadToToeAssementFinsihed: 0
   AppliedOxygen: 0
   AssessedIV: 0
   AnsweredFamilyQuestions: 0
+  StartCheckTwo: 0
   CheckPointThree: 0
   AssessedPain: 0
   AssessedWound: 0
   ObtainedWoundCulture: 0
+  StartCheckThree: 0
   CheckPointFour: 0
   AdminsteredCAM: 0
   NotifiedPhysicianOfResults: 0
+  StartCheckFour: 0
   TimeDisplay: {fileID: 1881080856}
   TimeValue: 0
 --- !u!4 &1875180505
@@ -2222,3 +2227,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leftHand: {fileID: 8220427543353597926}
   rightHand: {fileID: 8220427543353597925}
+--- !u!114 &8220427543353597928 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2520795747385101950, guid: b48157e9cb38e67458822b57e2be757c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8220427543353597923}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8220427543353597924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6230d547204991144a60ecccbd21e7fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
