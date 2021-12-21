@@ -948,6 +948,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1068887996912351394}
   - component: {fileID: 7610737388826491702}
+  - component: {fileID: 2520795747385101950}
   m_Layer: 0
   m_Name: XRRig
   m_TagString: Untagged
@@ -989,6 +990,20 @@ MonoBehaviour:
   m_TrackingOriginMode: 1
   m_TrackingSpace: 0
   m_CameraYOffset: 1.36144
+--- !u!114 &2520795747385101950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6511214474284813991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6230d547204991144a60ecccbd21e7fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftHand: {fileID: 5218351993015351920}
+  rightHand: {fileID: 5641526584707843766}
 --- !u!1 &8870862615749215980
 GameObject:
   m_ObjectHideFlags: 0
