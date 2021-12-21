@@ -21,5 +21,16 @@ public class Player : MonoBehaviour
         
     }
 
+    // Gets and Sets
 
+    public Hand LeftHand
+    {
+        get { return this.leftHand; }
+        set { this.leftHand = value; }
+    }
+    public Hand RightHand
+    {
+        get { return this.RightHand; }
+        set { this.RightHand = value; }
+    }
 }
