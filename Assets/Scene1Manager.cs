@@ -9,6 +9,7 @@ public class Scene1Manager : MonoBehaviour
     [Header("Scripts")]
     
     public Patient PatientScript;
+    
     [Space]
 
     //checkpoints, once passed the scene will change.
@@ -24,6 +25,9 @@ public class Scene1Manager : MonoBehaviour
     public bool ConfirmedPatientID = false;
     public bool HeadToToeAssesmentBegan = false;
 
+    //time to start checkpoint
+    public int StartCheckOne = 0;
+
     [Header("Checkpoint Two")]
     //is checkpoint started?
     public bool CheckPointTwo = false;
@@ -34,6 +38,9 @@ public class Scene1Manager : MonoBehaviour
     public bool AssessedIV = false;
     public bool AnsweredFamilyQuestions = false;
 
+    //time to start checkpoint
+    public int StartCheckTwo = 0;
+
     [Header("Checkpoint Three")]
     //is checkpoint started?
     public bool CheckPointThree = false;
@@ -43,6 +50,9 @@ public class Scene1Manager : MonoBehaviour
     public bool AssessedWound = false;
     public bool ObtainedWoundCulture = false;
 
+    //time to start checkpoint
+    public int StartCheckThree = 0;
+
     [Header("Checkpoint Four")]
     //is checkpoint started?
     public bool CheckPointFour = false;
@@ -50,6 +60,9 @@ public class Scene1Manager : MonoBehaviour
     //checks in the checkpoint
     public bool AdminsteredCAM = false;
     public bool NotifiedPhysicianOfResults = false;
+
+    //time to start checkpoint
+    public int StartCheckFour = 0;
 
     [Space]
     //Create a timer display
@@ -81,11 +94,12 @@ public class Scene1Manager : MonoBehaviour
         //update time
         TimeValue += Time.deltaTime;
         DisplayTime(TimeValue);
+
         //check time values to start certian checkpoints
-        if(CheckPointOne == false && TimeValue < 10) { StartCheckPointOne(); Debug.Log("1"); }
-        else if (CheckPointTwo == false && TimeValue < 20) { StartCheckPointTwo(); Debug.Log("2"); }
-        else if (CheckPointThree == false && TimeValue < 30) { StartCheckPointThree(); Debug.Log("3"); }
-        else if (CheckPointFour == false && TimeValue < 40) { StartCheckPointFour(); Debug.Log("4"); }
+        if(CheckPointOne == false && TimeValue < StartCheckTwo) { StartCheckPointOne(); Debug.Log("1"); }
+        else if (CheckPointTwo == false && TimeValue > StartCheckTwo) { StartCheckPointTwo(); Debug.Log("2"); }
+        else if (CheckPointThree == false && TimeValue > StartCheckThree) { StartCheckPointThree(); Debug.Log("3"); }
+        else if (CheckPointFour == false && TimeValue > StartCheckFour) { StartCheckPointFour(); Debug.Log("4"); }
 
     }
 
