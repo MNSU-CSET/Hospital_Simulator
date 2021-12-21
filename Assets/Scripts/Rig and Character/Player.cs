@@ -30,7 +30,7 @@ public class Player : MonoBehaviour
     }
     public Hand RightHand
     {
-        get { return this.RightHand; }
-        set { this.RightHand = value; }
+        get { return this.rightHand; }
+        set { this.rightHand = value; }
     }
 }
