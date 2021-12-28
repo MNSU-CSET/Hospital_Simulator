@@ -32,6 +32,10 @@ public class UIDialougeOptions : MonoBehaviour
         //run to see if all of the checkpoints are reached.
         SceneScript.CheckPointOneComplete();
     }
+    public void WHY()
+    {
+        Debug.Log(12213123123123);
+    }
     
 
 
