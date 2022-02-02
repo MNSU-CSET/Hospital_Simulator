@@ -32,19 +32,97 @@ public class Patient : MonoBehaviour
     //description of current behavior - this will be used when they are being assesed maybe?
     public string PatientBehavior = "Can change escriptions here.";
 
-    
+    [Space]
+
+    [Header("Head to Toe Checklist")]
+    public bool headChecked = false;
+    public bool armsChecked = false;
+    public bool torsoChecked = false;
+    public bool pelvisChecked = false;
+    public bool legsChecked = false;
+    public bool feetChecked = false;
+
+
+    Scene1Manager sceneScript;
+
+
 
 
 
     // Start is called before the first frame update
     void Start()
     {
+
+        headChecked = false;
+        armsChecked = false;
         
+        torsoChecked = false;
+        pelvisChecked = false;
+        legsChecked = false;
+        feetChecked = false;
+
+        GameObject scripts = GameObject.FindGameObjectWithTag("Scene Manager");
+        sceneScript = scripts.GetComponent<Scene1Manager>();
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+    void HeadToToeCheckComplete()
+    {
+        sceneScript.HeadToToeAssesmentBegan = true;
+        Debug.Log("Head to to complete???");
+        if (
+            headChecked &&
+            armsChecked &&
+            torsoChecked &&
+            pelvisChecked &&
+            legsChecked &&
+            feetChecked
+            )
+        {
+            Debug.Log("complete?");
+
+            sceneScript.HeadToToeAssementFinsihed = true;
+            
+        }
+    }
+    public void HeadCheck()
+    {
+        
+        headChecked = true;
+        HeadToToeCheckComplete();
+    }
+    public void ArmsCheck()
+    {
+
+        armsChecked = true;
+        HeadToToeCheckComplete();
+    }
+    public void TorsoCheck()
+    {
+
+        torsoChecked = true;
+        HeadToToeCheckComplete();
+    }
+    public void PelvisCheck()
+    {
+
+        pelvisChecked = true;
+        HeadToToeCheckComplete();
+    }
+    public void LegsChecked()
+    {
+
+        legsChecked = true;
+        HeadToToeCheckComplete();
+    }
+    public void FeetChecked()
+    {
+
+        feetChecked = true;
+        HeadToToeCheckComplete();
     }
 }
