@@ -42,6 +42,11 @@ public class Patient : MonoBehaviour
     public bool legsChecked = false;
     public bool feetChecked = false;
 
+    [Space]
+
+    [Header("Oxygen On")]
+    public bool oxygenApplied = false;
+
 
     Scene1Manager sceneScript;
 
@@ -61,6 +66,8 @@ public class Patient : MonoBehaviour
         legsChecked = false;
         feetChecked = false;
 
+        oxygenApplied = false;
+
         GameObject scripts = GameObject.FindGameObjectWithTag("Scene Manager");
         sceneScript = scripts.GetComponent<Scene1Manager>();
     }
@@ -70,6 +77,7 @@ public class Patient : MonoBehaviour
     {
         
     }
+    #region Head To Toe Check
     void HeadToToeCheckComplete()
     {
         sceneScript.HeadToToeAssesmentBegan = true;
@@ -125,4 +133,31 @@ public class Patient : MonoBehaviour
         feetChecked = true;
         HeadToToeCheckComplete();
     }
+
+    #endregion
+    #region OxygenApplied
+    public void OxygenApplied()
+    {
+        oxygenApplied = true;
+        sceneScript.AppliedOxygen = true;
+    }
+    public void OxygenRemoved()
+    {
+        oxygenApplied = false;
+        sceneScript.AppliedOxygen = false;
+
+    }
+    #endregion
+
+    #region IV Assessed
+    public void IVApplied()
+    {
+        sceneScript.AssessedIV = true;
+    }
+    public void IVRemoved()
+    {
+        sceneScript.AssessedIV = false;
+
+    }
+    #endregion
 }

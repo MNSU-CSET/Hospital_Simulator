@@ -7,6 +7,9 @@ TagManager:
   - Cleaning Object
   - Scene Manager
   - Hand
+  - Oxygen Mask
+  - IV Needle
+  - Family Member
   layers:
   - Default
   - TransparentFX

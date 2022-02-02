@@ -71,6 +71,9 @@ public class Scene1Manager : MonoBehaviour
     public TextMeshPro TimeDisplay;
     public float TimeValue = 0;
 
+    [Header("Family Member Check")]
+    public bool closeToFamily = false;
+
 
 
 
@@ -102,6 +105,10 @@ public class Scene1Manager : MonoBehaviour
         else if (CheckPointThree == false && TimeValue > StartCheckThree) { StartCheckPointThree(); Debug.Log("3"); }
         else if (CheckPointFour == false && TimeValue > StartCheckFour) { StartCheckPointFour(); Debug.Log("4"); }
 
+        CheckPointOneComplete();
+        CheckPointTwoComplete();
+        CheckPointThreeComplete();
+        CheckPointFourComplete();
 
         
 
