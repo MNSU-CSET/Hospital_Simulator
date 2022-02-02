@@ -17,8 +17,12 @@ public class FeetCheck : MonoBehaviour
     {
         if (other.tag == "Hand")
         {
+            if (!patientScript.feetChecked)
+            {
+                gameObject.GetComponent<MeshRenderer>().enabled = true;
+            }
             patientScript.FeetChecked();
-            gameObject.GetComponent<MeshRenderer>().enabled = true;
+            
         }
     }
 

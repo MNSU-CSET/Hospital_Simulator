@@ -17,8 +17,12 @@ public class headCheck : MonoBehaviour
     {
         if (other.tag == "Hand")
         {
+            if (!patientScript.headChecked)
+            {
+                gameObject.GetComponent<MeshRenderer>().enabled = true;
+            }
             patientScript.HeadCheck();
-            gameObject.GetComponent<MeshRenderer>().enabled = true;
+            
         }
     }
 

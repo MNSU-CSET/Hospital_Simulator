@@ -17,8 +17,12 @@ public class PelvisCheck : MonoBehaviour
     {
         if (other.tag == "Hand")
         {
+            if (!patientScript.pelvisChecked)
+            {
+                gameObject.GetComponent<MeshRenderer>().enabled = true;
+            }
             patientScript.PelvisCheck();
-            gameObject.GetComponent<MeshRenderer>().enabled = true;
+            
         }
     }
 

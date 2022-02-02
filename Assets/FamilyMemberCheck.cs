@@ -21,7 +21,7 @@ public class FamilyMemberCheck : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other);
+        //Debug.Log(other);
         if (other.gameObject.tag == "Hand")
         {
             

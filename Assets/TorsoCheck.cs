@@ -17,8 +17,13 @@ public class TorsoCheck : MonoBehaviour
     {
         if (other.tag == "Hand")
         {
+            if (!patientScript.torsoChecked)
+            {
+                gameObject.GetComponent<MeshRenderer>().enabled = true;
+            }
             patientScript.TorsoCheck();
-            gameObject.GetComponent<MeshRenderer>().enabled = true;
+            
+            
         }
     }
 

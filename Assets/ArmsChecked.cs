@@ -17,8 +17,12 @@ public class ArmsChecked : MonoBehaviour
     {
         if (other.tag == "Hand")
         {
+            if (!patientScript.armsChecked)
+            {
+                gameObject.GetComponent<MeshRenderer>().enabled = true;
+            }
             patientScript.ArmsCheck();
-            gameObject.GetComponent<MeshRenderer>().enabled = true;
+            
         }
     }
 
