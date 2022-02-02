@@ -56,6 +56,7 @@ GameObject:
   - component: {fileID: 7755969236864243647}
   - component: {fileID: 7755969236864243644}
   - component: {fileID: 7755969236864243645}
+  - component: {fileID: 4930741060499421431}
   - component: {fileID: 7755969236864243618}
   m_Layer: 0
   m_Name: Hand Sanitizer WHITE 1
@@ -144,6 +145,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &4930741060499421431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7755969236864243616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf6290e9bbf88aa44849f85f5d4ce212, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particleEffect: {fileID: 0}
+  effectSpawn: {fileID: 0}
 --- !u!114 &7755969236864243618
 MonoBehaviour:
   m_ObjectHideFlags: 0

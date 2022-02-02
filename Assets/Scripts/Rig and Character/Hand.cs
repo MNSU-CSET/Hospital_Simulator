@@ -8,8 +8,8 @@ public class Hand : MonoBehaviour
     Scene1Manager sceneScript;
 
     //when hands are washed use this effect
-    public ParticleSystem handwashEffect;
-    public Transform effectSpawn;
+    //public ParticleSystem handwashEffect;
+    //public Transform effectSpawn;
 
 
     // Hands can either be clean, or not.
@@ -34,8 +34,8 @@ public class Hand : MonoBehaviour
         if(other.tag == "Cleaning Object")
         {
             isClean = true;
-            ParticleSystem effect = Instantiate(handwashEffect, effectSpawn);
-            Destroy(effect, 2f);
+            
+            
             sceneScript.HandsCleanCheck();
         }
     }

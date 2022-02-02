@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Cleaning Object
   - Scene Manager
+  - Hand
   layers:
   - Default
   - TransparentFX
