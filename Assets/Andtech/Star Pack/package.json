@@ -1,0 +1,17 @@
+{
+	"name": "com.andtech.star-pack",
+	"version": "1.1.0",
+	"displayName": "Star Pack",
+	"description": "Advanced Particle System",
+	"author": {
+		"name": "andtech",
+		"email": "andtechgames@gmail.com"
+	},
+	"samples": [
+		{
+			"displayName": "Star Pack Demo",
+			"Description": "Quick start demo assets.",
+			"path": "Samples/Star Pack Demo"
+		}
+	]
+}

@@ -103,13 +103,9 @@ public class Scene1Manager : MonoBehaviour
         else if (CheckPointFour == false && TimeValue > StartCheckFour) { StartCheckPointFour(); Debug.Log("4"); }
 
 
-        //update checkpoints
+        
 
-        //handswashed
-        if (PlayerScript.LeftHand && PlayerScript.RightHand)
-        {
-            HandsWashed = true;
-        }
+        
        
 
    
@@ -128,6 +124,7 @@ public class Scene1Manager : MonoBehaviour
         //change the display text
        TimeDisplay.text = string.Format("{0:00}:{1:00}", min, sec);
     }
+    #region Checkpoints
     //check if a checkpoint has been completed
     public void CheckPointOneComplete()
     {
@@ -234,4 +231,23 @@ public class Scene1Manager : MonoBehaviour
         if (AppliedOxygen) { PatientScript.OxygenSaturation = 98; }
         else { PatientScript.OxygenSaturation = 90; }
     }
+    #endregion
+
+    #region methods for checks
+    public void HandsCleanCheck()
+    {
+
+        Hand leftHand = PlayerScript.LeftHand.GetComponent<Hand>();
+        Hand rightHand = PlayerScript.RightHand.GetComponent<Hand>();
+        //Debug.Log("Checking");
+        //handswashed
+        if (leftHand.IsClean && rightHand.IsClean)
+        {
+            //Debug.Log("checked");
+
+            HandsWashed = true;
+        }
+    }
+
+    #endregion
 }
