@@ -7,12 +7,18 @@ using TMPro;
 public class UIScript : MonoBehaviour
 {
     //finding the input device
-    private InputDevice targetDevice;
+    private InputDevice targetDeviceLeft;
+    private InputDevice targetDeviceRight;
+
 
 
     //GUI components
-    
-    public Canvas SceneSelector;
+
+    public Canvas DialougePanel;
+    public Canvas ScenePanel;
+
+
+
     public TextMeshProUGUI Scenes;
 
     //camera
@@ -35,56 +41,74 @@ public class UIScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //The following code shows how to get inputs from the controllers.
-        /*
-        //this gets the value of the primary button and records that it has been hit --------------  boolen vlaue;
-        if (targetDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool primaryButtonValue)&& primaryButtonValue)
-            Debug.Log("Pressing primary button");
 
-        //this records the output of the trigger press ------------------------------------ determines whatvalue the trigger is being pressed at
-        if (targetDevice.TryGetFeatureValue(CommonUsages.trigger, out float triggerValue) && triggerValue > .1f)
-            Debug.Log("Trigger Pressed" + triggerValue);
-
-        //this records the values of the joystick -------------------------------------------------------the position of the joysitck
-        if (targetDevice.TryGetFeatureValue(CommonUsages.primary2DAxis, out Vector2 primary2DAxisValue) && primary2DAxisValue != Vector2.zero)
-            Debug.Log("Primary TouchPad" + primary2DAxisValue);
-
-        */
+        
         //puts all devices into a list so we can call them later.
-        List<InputDevice> devices = new List<InputDevice>();
+        List<InputDevice> devicesleft = new List<InputDevice>();
+        List<InputDevice> devicesright = new List<InputDevice>();
+
 
         //gets only the left controller.
         InputDeviceCharacteristics leftControllerCharacteristics = InputDeviceCharacteristics.Left | InputDeviceCharacteristics.Controller;
-        
-        InputDevices.GetDevicesWithCharacteristics(leftControllerCharacteristics, devices);
+        //get the right controller
+        InputDeviceCharacteristics rightControllerCharacteristics = InputDeviceCharacteristics.Right | InputDeviceCharacteristics.Controller;
+
+
+        InputDevices.GetDevicesWithCharacteristics(leftControllerCharacteristics, devicesleft);
+        InputDevices.GetDevicesWithCharacteristics(rightControllerCharacteristics, devicesright);
+
 
         //ensures that if there are multiple devices no error occurs.
-        if (devices.Count > 0)
+        if (devicesleft.Count > 0)
         {
-            targetDevice = devices[0];
+            targetDeviceLeft = devicesleft[0];
+        }
+        if (devicesright.Count > 0)
+        {
+            targetDeviceRight = devicesright[0];
         }
 
         //gets the value of the primary button.
-        if (targetDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool aprimaryButtonValue) && aprimaryButtonValue) 
+        if (targetDeviceLeft.TryGetFeatureValue(CommonUsages.primaryButton, out bool aprimaryButtonValueLeft) && aprimaryButtonValueLeft) 
         {
             //Debug.Log("Off or on UI");
 
             //ADD INVOKE METHOD INSTEAD
-            SceneSelectorUIOn();
+            DialougeUIOn();
         }
-        else { SceneSelectorUIOff(); }
-        
-       
-    }
+        else { DialougeUIOff(); }
 
-    void SceneSelectorUIOn()
-    {
-        SceneSelector.enabled = true;
-       
-    }
-    void SceneSelectorUIOff()
-    {
-        SceneSelector.enabled = false;
+        if (targetDeviceRight.TryGetFeatureValue(CommonUsages.primaryButton, out bool aprimaryButtonValueRight) && aprimaryButtonValueRight)
+        {
+            //Debug.Log("Off or on UI");
+
+            
+            SceneUION();
+        }
+        else { SceneUIOff(); }
 
     }
+
+    void DialougeUIOn()
+    {
+        DialougePanel.enabled = true;
+       
+    }
+    void DialougeUIOff()
+    {
+        DialougePanel.enabled = false;
+
+    }
+    void SceneUION()
+    {
+        ScenePanel.enabled = true;
+
+    }
+    void SceneUIOff()
+    {
+        ScenePanel.enabled = false;
+
+
+    }
+
 }
