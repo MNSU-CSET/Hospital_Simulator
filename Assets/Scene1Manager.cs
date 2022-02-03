@@ -74,6 +74,9 @@ public class Scene1Manager : MonoBehaviour
     [Header("Family Member Check")]
     public bool closeToFamily = false;
 
+    [Header("Start Scene")]
+    public bool sceneStart = false;
+
 
 
 
@@ -81,6 +84,7 @@ public class Scene1Manager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        sceneStart = false;
         //create the patient that we want
         PatientScript.Name = "Sherman Yoder";
         PatientScript.Age = 80;
@@ -96,11 +100,12 @@ public class Scene1Manager : MonoBehaviour
     void Update()
     {
         //update time
-        TimeValue += Time.deltaTime;
+        if (sceneStart) { TimeValue += Time.deltaTime; }
+        
         DisplayTime(TimeValue);
 
         //check time values to start certian checkpoints
-        if(CheckPointOne == false && TimeValue < StartCheckTwo) { StartCheckPointOne(); Debug.Log("1"); }
+        if(CheckPointOne == false && TimeValue < StartCheckTwo && sceneStart) { StartCheckPointOne(); Debug.Log("1"); }
         else if (CheckPointTwo == false && TimeValue > StartCheckTwo) { StartCheckPointTwo(); Debug.Log("2"); }
         else if (CheckPointThree == false && TimeValue > StartCheckThree) { StartCheckPointThree(); Debug.Log("3"); }
         else if (CheckPointFour == false && TimeValue > StartCheckFour) { StartCheckPointFour(); Debug.Log("4"); }
@@ -257,4 +262,5 @@ public class Scene1Manager : MonoBehaviour
     }
 
     #endregion
+
 }

@@ -16,9 +16,12 @@ public class woundCultureScript : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (sceneScript.CheckPointThree)
+        Debug.Log("not cool");
+
+        if (other.gameObject.tag == "Hand")
         {
-            if (other.gameObject.tag == "Hand")
+            Debug.Log("yup");
+            if (sceneScript.CheckPointThree)
             {
                 woundCulture.gameObject.SetActive(true);
                 sceneScript.ObtainedWoundCulture = true;
