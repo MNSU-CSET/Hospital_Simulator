@@ -11,14 +11,24 @@ public class UIDialougeOptions : MonoBehaviour
     
     public TextMeshProUGUI uiPopUp;
 
-    public Scene1Manager SceneScript;
+    public Scene1Manager sceneScript;
+
     TextMeshPro familyText;
+    Patient patientScript;
 
     private void Start()
     {
         GameObject Family = GameObject.FindGameObjectWithTag("Family Member");
         familyText = Family.GetComponentInChildren<TextMeshPro>();
-        
+
+        uiPopUp.enabled = false;
+
+        GameObject patientObject = GameObject.FindGameObjectWithTag("Patient");
+        patientScript = patientObject.GetComponent<Patient>();
+
+          
+
+
     }
 
     //list of methods for buttons being pressed
@@ -27,10 +37,10 @@ public class UIDialougeOptions : MonoBehaviour
     {
         //intro button pressed
         //Debug.Log("Introduced self to patient");
-        SceneScript.IntroducedSelf = true;
+        sceneScript.IntroducedSelf = true;
 
         //run to see if all of the checkpoints are reached.
-        SceneScript.CheckPointOneComplete();
+        sceneScript.CheckPointOneComplete();
         
     }
 
@@ -38,23 +48,23 @@ public class UIDialougeOptions : MonoBehaviour
     {
         //intro button pressed
         //Debug.Log("Confirmed PatientID");
-        SceneScript.ConfirmedPatientID = true;
+        sceneScript.ConfirmedPatientID = true;
 
         //run to see if all of the checkpoints are reached.
-        SceneScript.CheckPointOneComplete();
+        sceneScript.CheckPointOneComplete();
     }
 
     public void TalkToFamily()
     {
-        if (SceneScript.closeToFamily)
+        if (sceneScript.closeToFamily)
         {
-            SceneScript.AnsweredFamilyQuestions = true;
+            sceneScript.AnsweredFamilyQuestions = true;
             familyText.text = "Thank you!";
 
 
 
             //check to see if everything is complete
-            SceneScript.CheckPointTwoComplete();
+            sceneScript.CheckPointTwoComplete();
         }
         else
         {
@@ -64,12 +74,34 @@ public class UIDialougeOptions : MonoBehaviour
         }
     }
 
+    public void AssessPain()
+    {
+        if (sceneScript.CheckPointThree)
+        {
+            uiPopUp.enabled = true;
+            uiPopUp.text = "You may Start Assessing Pain";
+            StartCoroutine(DisableUI());
+
+            patientScript.PainAssementBegan();
+
+
+        }
+        else 
+        {
+            uiPopUp.enabled = true;
+            uiPopUp.text = "You are not ready to Assess Pain";
+            StartCoroutine(DisableUI());
+        }
+    }
+
     IEnumerator DisableUI()
     {
         yield return new WaitForSeconds(3);
         uiPopUp.enabled = false;
     }
-    
+
+
+
 
 
 }

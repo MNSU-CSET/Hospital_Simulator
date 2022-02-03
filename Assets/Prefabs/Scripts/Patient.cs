@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Patient : MonoBehaviour
 {
@@ -47,6 +48,17 @@ public class Patient : MonoBehaviour
     [Header("Oxygen On")]
     public bool oxygenApplied = false;
 
+    [Space]
+
+    [Header("Pain Assesment")]
+    public bool painAssesmentBegan = false;
+    
+    
+
+    [Space]
+
+    [Header("Patient Text")]
+    public TextMeshPro patientText;
 
     Scene1Manager sceneScript;
 
@@ -67,6 +79,14 @@ public class Patient : MonoBehaviour
         feetChecked = false;
 
         oxygenApplied = false;
+
+        
+        painAssesmentBegan = false;
+        
+
+
+
+        patientText.enabled = false;
 
         GameObject scripts = GameObject.FindGameObjectWithTag("Scene Manager");
         sceneScript = scripts.GetComponent<Scene1Manager>();
@@ -148,7 +168,6 @@ public class Patient : MonoBehaviour
 
     }
     #endregion
-
     #region IV Assessed
     public void IVApplied()
     {
@@ -160,4 +179,28 @@ public class Patient : MonoBehaviour
 
     }
     #endregion
+    #region Pain Assessed
+    public void PainAssementBegan()
+    {
+        patientText.enabled = true;
+
+        painAssesmentBegan = true;
+        
+        patientText.text = "Overall Pain 5/10";
+        DisablePatientText();
+
+    }
+    public void PainAssementComplete()
+    {
+        sceneScript.AssessedPain = true;
+
+
+
+    }
+    #endregion
+    public IEnumerator DisablePatientText()
+    {
+        yield return new WaitForSeconds(3);
+        patientText.enabled = false;
+    }
 }
