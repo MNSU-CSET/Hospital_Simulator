@@ -10,6 +10,9 @@ TagManager:
   - Oxygen Mask
   - IV Needle
   - Family Member
+  - PatientText
+  - Patient
+  - Cotton Swab
   layers:
   - Default
   - TransparentFX
