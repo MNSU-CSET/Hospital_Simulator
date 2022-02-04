@@ -1964,6 +1964,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 311463472}
+  - component: {fileID: 311463473}
   m_Layer: 0
   m_Name: WelcomeBoard
   m_TagString: Untagged
@@ -1986,6 +1987,19 @@ Transform:
   m_Father: {fileID: 2902637587324238788}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &311463473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 311463471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad9b0ba7318dee54d81eb0f5204edd57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
 --- !u!1 &319080971
 GameObject:
   m_ObjectHideFlags: 0
@@ -8920,6 +8934,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1261230514}
   - component: {fileID: 1261230516}
+  - component: {fileID: 1261230517}
   - component: {fileID: 1261230515}
   m_Layer: 0
   m_Name: Patient Text Box
@@ -8937,7 +8952,7 @@ RectTransform:
   m_GameObject: {fileID: 1261230513}
   m_LocalRotation: {x: -0, y: -0.99996066, z: -0, w: 0.00887236}
   m_LocalPosition: {x: 0, y: 0, z: 47.7326}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 636390092}
   m_RootOrder: 0
@@ -9080,6 +9095,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1261230517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261230513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad9b0ba7318dee54d81eb0f5204edd57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
 --- !u!1001 &1271311910
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13181,6 +13209,7 @@ GameObject:
   - component: {fileID: 1813677491}
   - component: {fileID: 1813677493}
   - component: {fileID: 1813677492}
+  - component: {fileID: 1813677494}
   m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -13197,7 +13226,7 @@ RectTransform:
   m_GameObject: {fileID: 1813677490}
   m_LocalRotation: {x: -0, y: 0.9659259, z: -0, w: 0.25881898}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.0414131, y: 0.0445323, z: 1}
+  m_LocalScale: {x: -0.0414131, y: 0.0445323, z: 1}
   m_Children: []
   m_Father: {fileID: 6773906618492378677}
   m_RootOrder: 7
@@ -13340,6 +13369,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1813677494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1813677490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad9b0ba7318dee54d81eb0f5204edd57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
 --- !u!1 &1821823398
 GameObject:
   m_ObjectHideFlags: 0
@@ -15048,6 +15090,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2028922848}
+  - component: {fileID: 2028922849}
   m_Layer: 0
   m_Name: Body Parts
   m_TagString: Untagged
@@ -15078,6 +15121,19 @@ Transform:
   m_Father: {fileID: 2902637587324238788}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -21.627, z: 0}
+--- !u!114 &2028922849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028922847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad9b0ba7318dee54d81eb0f5204edd57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
 --- !u!1 &2031136378
 GameObject:
   m_ObjectHideFlags: 0
