@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Person : MonoBehaviour
+public class Person : MonoBehaviour, ISoundable
 {
     [SerializeField] string name;
     [SerializeField] GameObject personModel;
 
     // Sounds
-    [SerializeField] List<AudioClip> listOfCoughs;
+    [SerializeField] List<AudioClip> listOfAudios;
     public float minWaitBetweenPlays = 1f;
     public float maxWaitBetweenPlays = 5f;
     public float waitTimeCountdown = -1f;
@@ -27,9 +27,9 @@ public class Person : MonoBehaviour
         // Logic for randomly coughing
         if (waitTimeCountdown < 0f)
         {
-            int r = rnd.Next(listOfCoughs.Count);
+            int r = rnd.Next(listOfAudios.Count);
 
-            makeSound(listOfCoughs[r]);
+            makeSound(listOfAudios[r]);
             waitTimeCountdown = Random.Range(minWaitBetweenPlays, maxWaitBetweenPlays);
         }
         else

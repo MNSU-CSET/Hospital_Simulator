@@ -4452,6 +4452,7 @@ GameObject:
   - component: {fileID: 636390092}
   - component: {fileID: 636390093}
   - component: {fileID: 636390094}
+  - component: {fileID: 636390095}
   m_Layer: 0
   m_Name: Patient
   m_TagString: Patient
@@ -4530,6 +4531,27 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &636390095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 636390091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccc9223f1fdba7d4aa71d1efb3f2ab11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: 
+  personModel: {fileID: 995992318}
+  listOfAudios:
+  - {fileID: 8300000, guid: 8c63f8f67219baa4ca570da9db0d03cb, type: 3}
+  - {fileID: 8300000, guid: 74b72b6b0de907145ac1a721c5e8e439, type: 3}
+  - {fileID: 8300000, guid: 39503f13c44317146954f9886231c267, type: 3}
+  minWaitBetweenPlays: 1
+  maxWaitBetweenPlays: 120
+  waitTimeCountdown: -1
 --- !u!1 &650499218
 GameObject:
   m_ObjectHideFlags: 0
@@ -7185,6 +7207,12 @@ Transform:
   m_Father: {fileID: 2109756746}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &995992318 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7238146291226642440, guid: ebc4580c7ed532b4cb07171aed640d52,
+    type: 3}
+  m_PrefabInstance: {fileID: 1605095143}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1056361091 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6090118849675874605, guid: cda936b93cff9ca45ba9d92dbbe8f002,
@@ -49748,6 +49776,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6773906618492378677}
   - component: {fileID: 6773906618492378675}
+  - component: {fileID: 6773906618492378676}
   m_Layer: 0
   m_Name: family member
   m_TagString: Family Member
@@ -49771,6 +49800,26 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &6773906618492378676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6773906618492378674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccc9223f1fdba7d4aa71d1efb3f2ab11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: 
+  personModel: {fileID: 6775243877004579396}
+  listOfAudios:
+  - {fileID: 8300000, guid: 8c63f8f67219baa4ca570da9db0d03cb, type: 3}
+  - {fileID: 8300000, guid: 74b72b6b0de907145ac1a721c5e8e439, type: 3}
+  minWaitBetweenPlays: 1
+  maxWaitBetweenPlays: 120
+  waitTimeCountdown: -1
 --- !u!224 &6773906618492378677
 RectTransform:
   m_ObjectHideFlags: 0
