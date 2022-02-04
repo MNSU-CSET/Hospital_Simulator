@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Scene1Manager : MonoBehaviour
 {
@@ -61,6 +62,9 @@ public class Scene1Manager : MonoBehaviour
     //checks in the checkpoint
     public bool AdminsteredCAM = false;
     public bool NotifiedPhysicianOfResults = false;
+
+    public bool AdminstereCamAllowed = false;
+    public bool NotifyAllowed = false;
 
     //time to start checkpoint
     public int StartCheckFour = 0;
@@ -263,4 +267,17 @@ public class Scene1Manager : MonoBehaviour
 
     #endregion
 
+    public void StartEndGame()
+    {
+        StartCoroutine(EndSceneCountDown());
+    }
+    IEnumerator EndSceneCountDown()
+    {
+        yield return new WaitForSeconds(5);
+        EndingScreen();
+    }
+    private void EndingScreen()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
 }

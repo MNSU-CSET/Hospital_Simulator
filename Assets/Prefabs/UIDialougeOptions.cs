@@ -13,6 +13,9 @@ public class UIDialougeOptions : MonoBehaviour
 
     public Scene1Manager sceneScript;
 
+    public GameObject[] panels;
+    public int currentPanel = 0;
+
     TextMeshPro familyText;
     Patient patientScript;
 
@@ -26,7 +29,11 @@ public class UIDialougeOptions : MonoBehaviour
         GameObject patientObject = GameObject.FindGameObjectWithTag("Patient");
         patientScript = patientObject.GetComponent<Patient>();
 
-          
+        foreach (GameObject panel in panels)
+        {
+            panel.SetActive(false);
+        }
+        panels[currentPanel].SetActive(true);
 
 
     }
@@ -94,6 +101,60 @@ public class UIDialougeOptions : MonoBehaviour
         }
     }
 
+    public void AdminsterAssesment()
+    {
+        if (sceneScript.AdminstereCamAllowed)
+        {
+            uiPopUp.enabled = true;
+            uiPopUp.text = "Assesment Tool Complete";
+            StartCoroutine(DisableUI());
+
+            sceneScript.AdminsteredCAM = true;
+        }
+        else
+        {
+            uiPopUp.enabled = true;
+            uiPopUp.text = "You need to grab the right tool!";
+            StartCoroutine(DisableUI());
+        }
+    }
+    public void GivePhysicianResults()
+    {
+        if (sceneScript.NotifyAllowed)
+        {
+            uiPopUp.enabled = true;
+            uiPopUp.text = "Talking to Physician";
+            StartCoroutine(DisableUI());
+
+            sceneScript.NotifiedPhysicianOfResults = true;
+        }
+        else
+        {
+            uiPopUp.enabled = true;
+            uiPopUp.text = "Get Closer to Physician";
+            StartCoroutine(DisableUI());
+        }
+    }
+    public void NextPage()
+    {
+        panels[currentPanel].SetActive(false);
+        if (currentPanel+1>=panels.Length-1)
+        {
+            currentPanel = panels.Length-1;
+        }
+        else { currentPanel+=1; }
+        panels[currentPanel].SetActive(true);
+    }
+    public void PreviousPage()
+    {
+        panels[currentPanel].SetActive(false);
+        if (currentPanel-1<=0)
+        {
+            currentPanel = 0;
+        }
+        else { currentPanel-=1; }
+        panels[currentPanel].SetActive(true);
+    }
     IEnumerator DisableUI()
     {
         yield return new WaitForSeconds(3);

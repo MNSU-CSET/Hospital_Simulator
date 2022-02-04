@@ -13,6 +13,7 @@ TagManager:
   - PatientText
   - Patient
   - Cotton Swab
+  - Assesment Tool
   layers:
   - Default
   - TransparentFX
