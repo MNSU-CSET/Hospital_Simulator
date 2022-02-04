@@ -8,10 +8,11 @@ public class Person : MonoBehaviour
     [SerializeField] GameObject personModel;
 
     // Sounds
-    [SerializeField] AudioClip coughNoise;
+    [SerializeField] List<AudioClip> listOfCoughs;
     public float minWaitBetweenPlays = 1f;
     public float maxWaitBetweenPlays = 5f;
     public float waitTimeCountdown = -1f;
+    static System.Random rnd = new System.Random();
 
 
     // Start is called before the first frame update
@@ -23,9 +24,12 @@ public class Person : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Logic for randomly coughing
         if (waitTimeCountdown < 0f)
         {
-            makeSound(coughNoise);
+            int r = rnd.Next(listOfCoughs.Count);
+
+            makeSound(listOfCoughs[r]);
             waitTimeCountdown = Random.Range(minWaitBetweenPlays, maxWaitBetweenPlays);
         }
         else
