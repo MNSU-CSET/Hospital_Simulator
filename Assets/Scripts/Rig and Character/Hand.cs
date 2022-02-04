@@ -14,6 +14,9 @@ public class Hand : MonoBehaviour
 
     // Hands can either be clean, or not.
     [SerializeField] private bool isClean = false;
+    [SerializeField] Material unCleanColor;
+    [SerializeField] Material cleanColor;
+    [SerializeField] GameObject handModel;
 
 
     // Start is called before the first frame update
@@ -33,9 +36,7 @@ public class Hand : MonoBehaviour
     {
         if(other.tag == "Cleaning Object")
         {
-            isClean = true;
-            
-            
+            setHandClean();
             sceneScript.HandsCleanCheck();
         }
     }
@@ -45,5 +46,19 @@ public class Hand : MonoBehaviour
     {
         get { return this.isClean; }
         set { this.isClean = value; }
+    }
+
+    private void setHandClean()
+    {
+        isClean = true;
+        
+        handModel.GetComponent<SkinnedMeshRenderer>().material = cleanColor;
+
+    }
+
+    private void setHandUnclean()
+    {
+        isClean = false;
+        handModel.GetComponent<SkinnedMeshRenderer>().material = unCleanColor;
     }
 }
