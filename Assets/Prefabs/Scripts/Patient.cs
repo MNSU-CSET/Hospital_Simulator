@@ -193,7 +193,7 @@ public class Patient : MonoBehaviour
     public void PainAssementComplete()
     {
         sceneScript.AssessedPain = true;
-
+        patientText.enabled = false;
 
 
     }
