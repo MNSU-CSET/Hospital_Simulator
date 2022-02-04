@@ -3152,6 +3152,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hand Sanitizer GREEN 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7066291095932364858, guid: f00ad03b45cbec04fb6db01839317265,
+        type: 3}
+      propertyPath: m_TagString
+      value: Cleaning Object
+      objectReference: {fileID: 0}
     - target: {fileID: 7066291095932364859, guid: f00ad03b45cbec04fb6db01839317265,
         type: 3}
       propertyPath: m_RootOrder
