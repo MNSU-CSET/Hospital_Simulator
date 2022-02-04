@@ -38026,6 +38026,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isClean: 0
+  unCleanColor: {fileID: 2100000, guid: d3c64595dbefc594b96eab5b74e0b8e1, type: 2}
+  cleanColor: {fileID: 2100000, guid: 6376b1fe11f7d3942a9a83da42a435b2, type: 2}
+  handModel: {fileID: 1670452310028536648}
 --- !u!4 &4228894111926945571
 Transform:
   m_ObjectHideFlags: 0
@@ -38696,6 +38699,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isClean: 0
+  unCleanColor: {fileID: 2100000, guid: d3c64595dbefc594b96eab5b74e0b8e1, type: 2}
+  cleanColor: {fileID: 2100000, guid: 6376b1fe11f7d3942a9a83da42a435b2, type: 2}
+  handModel: {fileID: 3564155660346672138}
 --- !u!1 &4353062605674147249
 GameObject:
   m_ObjectHideFlags: 0
