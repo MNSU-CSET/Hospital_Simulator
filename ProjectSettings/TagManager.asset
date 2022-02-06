@@ -3,7 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Cleaning Object
+  - Scene Manager
+  - Hand
+  - Oxygen Mask
+  - IV Needle
+  - Family Member
+  - PatientText
+  - Patient
+  - Cotton Swab
+  - Assesment Tool
   layers:
   - Default
   - TransparentFX
@@ -11,7 +21,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Grab
   - 
   - 
   - 
