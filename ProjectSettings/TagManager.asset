@@ -14,6 +14,7 @@ TagManager:
   - Patient
   - Cotton Swab
   - Assesment Tool
+  - Rope
   layers:
   - Default
   - TransparentFX

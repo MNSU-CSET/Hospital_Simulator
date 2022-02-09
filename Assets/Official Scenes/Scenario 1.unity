@@ -2528,12 +2528,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 345596903}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &368309407 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2636689445007644954, guid: d658588012ab10445816ea50119bfc14,
-    type: 3}
-  m_PrefabInstance: {fileID: 1698450261}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &406870480
 GameObject:
   m_ObjectHideFlags: 0
@@ -12125,17 +12119,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1093449122}
     m_Modifications:
-    - target: {fileID: 4930741060499421431, guid: d658588012ab10445816ea50119bfc14,
-        type: 3}
-      propertyPath: effectSpawn
-      value: 
-      objectReference: {fileID: 368309407}
-    - target: {fileID: 4930741060499421431, guid: d658588012ab10445816ea50119bfc14,
-        type: 3}
-      propertyPath: particleEffect
-      value: 
-      objectReference: {fileID: 8299906140135176508, guid: e741880a362139a4f8d30456d363bd25,
-        type: 3}
     - target: {fileID: 7755969236864243616, guid: d658588012ab10445816ea50119bfc14,
         type: 3}
       propertyPath: m_Name
@@ -12145,21 +12128,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7755969236864243619, guid: d658588012ab10445816ea50119bfc14,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7755969236864243619, guid: d658588012ab10445816ea50119bfc14,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7755969236864243619, guid: d658588012ab10445816ea50119bfc14,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7755969236864243619, guid: d658588012ab10445816ea50119bfc14,
         type: 3}
@@ -12209,11 +12177,6 @@ PrefabInstance:
     - target: {fileID: 7755969236864243619, guid: d658588012ab10445816ea50119bfc14,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7755969236864243645, guid: d658588012ab10445816ea50119bfc14,
-        type: 3}
-      propertyPath: m_Constraints
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
