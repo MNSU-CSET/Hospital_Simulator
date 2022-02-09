@@ -24,4 +24,3 @@ A VR project for the MNSU Nursing program to use in training by simulating count
 | Hospital Props - VOL.1 - 6 - MEGA PACK | 1.0 |
 | Joystick Pack | 2.1 |
 | Mega Animations Pack | 1.7.1 |
-| VR Interaction Framework | 1.7.3 |
