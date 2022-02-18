@@ -17,6 +17,9 @@ public class ScenarioApplication : MonoBehaviour
 
     public PatientModel patientModel;
 
+    public ObjectiveModel objectiveModel;
+
+    
 
     //all views
     [Header("Views")]
@@ -27,6 +30,8 @@ public class ScenarioApplication : MonoBehaviour
         public HandView handView;
 
     public PatientView patientView;
+
+    public ObjectiveView objectiveView;
 
 
 
@@ -40,6 +45,8 @@ public class ScenarioApplication : MonoBehaviour
         public HandController handController;
 
     public PatientController patientController;
+
+    public ObjectiveController objectiveController;
 
 
 
