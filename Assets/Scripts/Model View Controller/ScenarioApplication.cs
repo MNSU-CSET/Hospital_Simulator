@@ -9,8 +9,40 @@ using UnityEngine;
 public class ScenarioApplication : MonoBehaviour
 {
     //here we reference all of the root instances
+    [Header("Models")]
     public ScenarioModel model;
+    public EquipmentModel equipmentModel;
+    public PlayerModel playerModel;
+        public HandModel handModel;
+
+    public PatientModel patientModel;
+
+
+    //all views
+    [Header("Views")]
+
     public ScenarioView view;
+    public EquipmentView equipmentView;
+    public PlayerView playerView;
+        public HandView handView;
+
+    public PatientView patientView;
+
+
+
+
+    [Header("Controllers")]
+
+    //all controllers?
     public ScenarioController controller;
+    public EquipmentController equipmentController;
+    public PlayerController playerController;
+        public HandController handController;
+
+    public PatientController patientController;
+
+
+
+
 
 }

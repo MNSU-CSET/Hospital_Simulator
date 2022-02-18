@@ -34,7 +34,7 @@ public class Patient : MonoBehaviour
     public string PatientBehavior = "Can change escriptions here.";
 
     [Space]
-
+    //dont do these checklists because they will be in the controller instead maybe idk yet
     [Header("Head to Toe Checklist")]
     public bool headChecked = false;
     public bool armsChecked = false;
@@ -52,7 +52,7 @@ public class Patient : MonoBehaviour
 
     [Header("Pain Assesment")]
     public bool painAssesmentBegan = false;
-    
+    //end of the dont do here thing
     
 
     [Space]
