@@ -6,15 +6,27 @@ using UnityEngine;
 
 public class ObjectiveController : ScenarioElement
 {
-    // Start is called before the first frame update
-    void Start()
+    //list of functions to relay to model and also trigger other things like a clipboard
+
+    public void HandsWashed()
     {
-        
+        //this is called by the player controller when the hands are washed
+        app.objectiveModel.HandsWashed = true;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void WoundCultureObtained()
     {
-        
+        app.objectiveModel.ObtainedWoundCulture = true;
     }
+    public void AppliedOxygen(bool tf)
+    {
+        app.objectiveModel.OxygenStarted = tf;
+    }
+
+    public void GettingIV(bool tf)
+    {
+        app.objectiveModel.IVApplied = tf;
+    }
+
+
 }

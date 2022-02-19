@@ -12,7 +12,7 @@ public class HandSanitizerView : ScenarioElement
     {
         if (other.gameObject.tag == "Player")
         {
-            app.equipmentController.WashHands();
+            //app.equipmentController.WashHands();
 
             //orrrrrrrrrrr
             //the way that I think will work even better.

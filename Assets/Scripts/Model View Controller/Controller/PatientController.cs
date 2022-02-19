@@ -7,15 +7,13 @@ using UnityEngine;
 
 public class PatientController : ScenarioElement
 {
-    // Start is called before the first frame update
-    void Start()
+    public void GettingOxygen(bool tf)
     {
-        
+        app.patientModel.GettingOxygen = tf;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void GettingIV(bool tf)
     {
-        
+        app.patientModel.GettingIV = tf;
     }
 }

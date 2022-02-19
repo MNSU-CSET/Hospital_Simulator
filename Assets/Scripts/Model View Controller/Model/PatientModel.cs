@@ -45,7 +45,9 @@ public class PatientModel : ScenarioElement
     public GameObject[] WoundLocation;
     public GameObject[] WoundType;
 
-
+    [Header("Booleans For When Receiving")]
+    public bool GettingOxygen = false;
+    public bool GettingIV = false;
 
 
     void Start()

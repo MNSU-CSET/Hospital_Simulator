@@ -21,7 +21,7 @@ public class ScenarioApplication : MonoBehaviour
 
     
 
-    //all views
+    //all views - idk if you actaully need this, but here it is.
     [Header("Views")]
 
     public ScenarioView view;

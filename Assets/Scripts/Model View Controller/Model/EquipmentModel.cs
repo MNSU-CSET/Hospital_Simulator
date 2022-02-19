@@ -19,7 +19,9 @@ public class EquipmentModel : ScenarioElement
     public AudioSource HandSanitizerAudioSource;
     //this doesn't work though because we have multiple hand sanitziers that fall into this, there fore making the audio and effect play from one spot instead of each individual spot.
 
-
-
+    [Space]
+    [Header("Wound Culture")]
+    public Material cleanSwabRenderer;
+    public Material dirtySwabRenderer;
 
 }

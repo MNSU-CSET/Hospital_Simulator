@@ -20,6 +20,8 @@ public class PlayerController : ScenarioElement
     }
     public void HandsClean()
     {
+        //we also need to tell the objective controller that our hands are clean
+        app.objectiveController.HandsWashed();
         //this runs when both hands become clean in the hand controller
         app.playerModel.handsClean = true;
     }
