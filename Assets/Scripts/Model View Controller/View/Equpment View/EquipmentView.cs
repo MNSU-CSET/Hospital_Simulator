@@ -6,7 +6,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EquipmentView : ScenarioView
+public class EquipmentView : ScenarioElement
 {
    
 }

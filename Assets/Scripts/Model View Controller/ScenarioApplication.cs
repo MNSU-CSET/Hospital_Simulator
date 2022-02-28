@@ -19,6 +19,8 @@ public class ScenarioApplication : MonoBehaviour
 
     public ObjectiveModel objectiveModel;
 
+    public WhiteboardModel whiteboardModel;
+
     
 
     //all views - idk if you actaully need this, but here it is.
@@ -33,7 +35,7 @@ public class ScenarioApplication : MonoBehaviour
 
     public ObjectiveView objectiveView;
 
-
+    public WhiteboardView whiteboardView;
 
 
     [Header("Controllers")]
@@ -47,6 +49,8 @@ public class ScenarioApplication : MonoBehaviour
     public PatientController patientController;
 
     public ObjectiveController objectiveController;
+
+    public WhiteboardController whiteboardController;
 
 
 
