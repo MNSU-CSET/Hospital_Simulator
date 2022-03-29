@@ -1,0 +1,17 @@
+{
+	"scenario":
+	[
+		{
+	
+			"scenarioName": "Scenario One",
+			"player1":
+			[
+				{
+					"playerID": "1234567",
+			
+				}
+			]
+		}
+			
+	]
+}
