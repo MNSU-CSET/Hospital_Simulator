@@ -1,0 +1,19 @@
+Blood Drips and Paint Splats.
+
+Provided in this pack are 3 texture pages, each control various
+aspects such as Masking, Base Color Value and Normal Maps for the
+bump.
+
+The textures are 8*8 squares left to right. Just like a sprite sheet.
+The Animation of the texture can be controlled by the Animation Speed.
+If this is set to 0, you can set the actual frame 0-63 via the Animation
+Frame slider. A Normal map power slider lets you alter the overall bump effect.
+
+Supposedly you could also control this via a script so that it can be used in other ways.
+
+for more requests or information about this package, please contact me
+by email: me@robert ramsay.co.uk
+
+many thanks for your purchase, please leave a review or get in touch
+by email if there is any problms.
+

@@ -1,0 +1,124 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: BloodPool_Mat1
+  m_Shader: {fileID: 4800000, guid: c2630e0b0d44f7045946eac307580599, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BloodSpillArea_A_normal:
+        m_Texture: {fileID: 2800000, guid: 4cd6f088fa4b811418128050a6ee8b58, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BloodSpillArea_Mask_A:
+        m_Texture: {fileID: 2800000, guid: 6f98f51be33f737469b572ac63f7552c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RoundNormal:
+        m_Texture: {fileID: 2800000, guid: 3c7d36b08e44f6044b809236eadfd0b6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Shape_Round_normal:
+        m_Texture: {fileID: 2800000, guid: 3c7d36b08e44f6044b809236eadfd0b6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TextureSample0:
+        m_Texture: {fileID: 10300, guid: 0000000000000000f000000000000000, type: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _BumpScale: 1
+    - _Cutoff: 0.5
+    - _Depth1: 0.65
+    - _Depth2: 0.4
+    - _DepthSense: 0.03
+    - _DepthSense1: 2.46
+    - _DepthSense2: 3.68
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _Fade: 0
+    - _FadeRange: -0.02
+    - _FalloffArea1: 85.9
+    - _FalloffArea2: 83.6
+    - _Float2: 2
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _MeshScale: 0
+    - _Metallic: 0
+    - _Mode: 0
+    - _MotionSpeed1: 1.78
+    - _MotionSpeed2: 0.83
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _Tiling: 1
+    - _Tiling1: 5.1
+    - _Tiling2: 4.6
+    - _ToneBias: 0.235
+    - _ToneScale: 0.72
+    - _UVSec: 0
+    - _VAVAVAVAVAV: 0
+    - _ZWrite: 1
+    - __dirty: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _MainColorGloss: {r: 0.31617647, g: 0, b: 0, a: 0.966}
+    - _PositionOffset1: {r: -0.09, g: 0.62, b: 0, a: 0}
+    - _PositionOffset2: {r: 1.31, g: 0.67, b: 0, a: 0}
+    - _Vector1: {r: 5, g: 2.6, b: 0, a: 0}

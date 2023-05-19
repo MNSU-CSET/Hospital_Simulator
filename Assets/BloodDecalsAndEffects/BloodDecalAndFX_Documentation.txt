@@ -1,0 +1,32 @@
+Blood Decal and FX
+
+GOOGLE DRIVE links for all RENDER PIPELINE packages: https://drive.google.com/drive/folders/1KSvkICIJPFrOLU8z6DqkDGFVs8bQrWri
+
+V3.4
+Material Fixes, Shader update with extra transparency power slider control
+Added Footprints, handprints and some more detail decals. They are in the folder 'Blood hands and Feet Details'
+updated Blood drying script so that you can also now fade->destory the gameobject, Ideal if you are placing footprints around
+then no need to worry about too many decals appearing and fighting with each other (you may need to vary y position placement as
+objects will z-fight, this is also more noticable when objects have transparency, they will trasparancy-depth-fight also. Not something
+that is fixed from my side, common graphics thing.).
+
+
+
+V3.2 / V3.3
+Added a script that automatically drives the blood drying effect. 
+Add the script to any blood decal based object or prefab and set the drying time. 
+A value of 0.01f is default and will take around 2 minutes for the blood to dry completely, this is only really useful if you intend of making blood drips spawn on the ground based on a bleeding person or
+creature in your game, or if you wish to use it as a clue, fresher blood means the closer the victim...
+
+The script is called 'MakeBloodDry' and when autoDry is checked, the blood will start to dry after it is instanciated, either at the beginning of the game, or if you have the script attached to a prefab of one of the blood decals, it will begin to dry when you instanciate that prefab.
+
+In a future update, a blood effect that expands and dries will be possible, I am still currently working out the best way to create this effect, perhaps all shader driven, I'd also like to have shader based dripping and wall splats that don't depend on animated textures or particle effects, but instead can act like real liquid, or as close to the real thing as possible.
+
+-----------------------------------------------------
+Fixes: BloodSprayFXExtra - was showing missing materials.
+
+Tweaks: MakeBlodDry script added to all decal mesh prefabs (automaticlly makes blood dry when instanicated over a period of around 2 minutes, this can be changed via the expoed parameters in the inspector.)
+-------------------------------------------------------
+
+Suggestions and Help?
+Contact me@robertramsay.co.uk

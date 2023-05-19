@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: c2630e0b0d44f7045946eac307580599
+timeCreated: 1550155103
+licenseType: Store
+ShaderImporter:
+  defaultTextures:
+  - _BloodSpillArea_A_normal: {fileID: 2800000, guid: 4cd6f088fa4b811418128050a6ee8b58,
+      type: 3}
+  - _RoundNormal: {fileID: 2800000, guid: 3c7d36b08e44f6044b809236eadfd0b6, type: 3}
+  - _BloodSpillArea_Mask_A: {fileID: 2800000, guid: 6f98f51be33f737469b572ac63f7552c,
+      type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: HandsAndFeetSheet
+  m_Shader: {fileID: 4800000, guid: 3abc2696835a57e47a3fb05babf7e908, type: 3}
+  m_ShaderKeywords: _ALPHAPREMULTIPLY_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DriedBlood_Curvature:
+        m_Texture: {fileID: 2800000, guid: 308ca4ba1cb8acb49858ceb0a3a2d4b4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DriedBlood_Normal:
+        m_Texture: {fileID: 2800000, guid: 004c57b0cd4b5f84d8165ef5658d8ca4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainNormalMap:
+        m_Texture: {fileID: 2800000, guid: 004c57b0cd4b5f84d8165ef5658d8ca4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTexture:
+        m_Texture: {fileID: 2800000, guid: 308ca4ba1cb8acb49858ceb0a3a2d4b4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Noise_Texture:
+        m_Texture: {fileID: 2800000, guid: 512a2c50bd2f7c643bba3890aa293ad8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Bias: 0.102
+    - _BumpScale: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DriedBloodEffectLevel: 0
+    - _DriedBloodEffect_Tiling: 154
+    - _DriedBlood_Metallic: 0.275
+    - _DriedOpacityLevel: 5
+    - _DstBlend: 10
+    - _Gloss: 0.95
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _Metallic: 0.009
+    - _Mode: 3
+    - _Noise1: 25.6
+    - _Noise2: 1.47
+    - _OcclusionStrength: 1
+    - _OverallNormalPower: 0.42
+    - _Parallax: 0.02
+    - _Scale: 0.218
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _TrasparencyPower: 0.505
+    - _UVSec: 0
+    - _ZWrite: 0
+    - __dirty: 0
+    m_Colors:
+    - _Color: {r: 0.30588236, g: 0.054901965, b: 0.054901965, a: 1}
+    - _DriedBloodColorGloss: {r: 0.07352942, g: 0.028315542, b: 0.0037846018, a: 0}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _MainColorTintFadeA: {r: 0.08823532, g: 0.002595159, b: 0.002595159, a: 1}

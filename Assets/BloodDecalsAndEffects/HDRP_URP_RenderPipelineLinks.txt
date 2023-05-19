@@ -1,0 +1,11 @@
+
+Please find access to other render pipeline packages here:
+
+https://drive.google.com/drive/folders/1KSvkICIJPFrOLU8z6DqkDGFVs8bQrWri
+
+You can remove the package you downloaded from the store if you are seeing pink shaders or console issues then select the one most appropriate based on the name.
+
+Thanks,
+Robert
+RRFreelance / PiXelburner
+me@robertramsay.co.uk
